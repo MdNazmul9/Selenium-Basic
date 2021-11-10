@@ -11,7 +11,7 @@ driver.maximize_window()
 
 # driver.get('https://www.google.com')
 # driver.get('http://127.0.0.1:5500/index_OutPut.html')
-url = r'file:///home/nazmul/Desktop/tutorial/sel/index.html'
+url = r'file:///home/nazmul/Desktop/Selenium-Basic-Python/index.html'
 
 
 for i, df in enumerate(pd.read_html(url)):
@@ -52,7 +52,7 @@ for i in range(len(df)):
     phn.send_keys(df.Phone[i])
 
 
-    time.sleep(.3)
+    time.sleep(0.3)
     # field.sendKeys(protractor.Key.chord(protractor.Key.CONTROL, "a"));
     # field.sendKeys(protractor.Key.BACK_SPACE);
     # field.clear();
