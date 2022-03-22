@@ -37,7 +37,7 @@ df = pd.DataFrame({'First_Name': df.FastName, 'Last_Name': df.LastName, 'Email':
 
 
 for i in range(len(df)):
-    driver.get('http://127.0.0.1:5500/index_OutPut.html')
+    driver.get('file:///home/nazmul/Desktop/Selenium-Basic-Python/index_OutPut.html')
         
     fname = driver.find_element(By.ID, 'firstName')
     fname.send_keys(df.First_Name[i])
@@ -52,7 +52,7 @@ for i in range(len(df)):
     phn.send_keys(df.Phone[i])
 
 
-    time.sleep(0.3)
+    time.sleep(30)
     # field.sendKeys(protractor.Key.chord(protractor.Key.CONTROL, "a"));
     # field.sendKeys(protractor.Key.BACK_SPACE);
     # field.clear();
